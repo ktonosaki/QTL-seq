@@ -320,8 +320,8 @@ class Vcf2Index(object):
         os.remove('{}/snp_index.tsv.temp'.format(self.out))
 
     def calculate_SNPindex(self):
-        if os.path.exists('{}/snp_index.tsv.temp'.format(self.out)):
-            os.remove('{}/snp_index.tsv.temp'.format(self.out))
+#        if os.path.exists('{}/snp_index.tsv.temp'.format(self.out)):
+#            os.remove('{}/snp_index.tsv.temp'.format(self.out))
 
         root, ext = os.path.splitext(self.vcf)
         if ext == '.gz':
