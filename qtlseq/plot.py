@@ -2,9 +2,15 @@ import os
 import warnings
 warnings.filterwarnings("ignore")
 import pandas as pd
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
+try:
+    import matplotlib
+    matplotlib.use('Agg')
+finally:
+    import matplotlib.pyplot as plt
+
+# import matplotlib
+# matplotlib.use('Agg')
+# import matplotlib.pyplot as plt
 from qtlseq.utils import time_stamp
 
 
